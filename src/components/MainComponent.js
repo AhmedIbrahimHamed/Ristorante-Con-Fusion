@@ -68,7 +68,7 @@ class Main extends Component {
                 <TransitionGroup>
                     <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
                         <Switch>
-                            <Route path={process.env.PUBLIC_URL + '/home'} component={() => <Home
+                            <Route path='/home' component={() => <Home
                                 dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
                                 dishesLoading={this.props.dishes.isLoading}
                                 dishErrMess={this.props.dishes.errMess}
@@ -79,13 +79,13 @@ class Main extends Component {
                                 leaderLoading={this.props.leaders.isLoading}
                                 leaderErrMess={this.props.leaders.errMess}
                             />} />
-                            <Route exact path={process.env.PUBLIC_URL + '/aboutus'} component={AboutUsWithLeaders} />
-                            <Route exact path={process.env.PUBLIC_URL + '/menu'} component={() => <Menu dishes={this.props.dishes} />} />
-                            <Route path={process.env.PUBLIC_URL + '/menu/:dishId'} component={DishWithId} />
-                            <Route exact path={process.env.PUBLIC_URL + '/contactus'} component={() => <Contact
+                            <Route exact path='/aboutus' component={AboutUsWithLeaders} />
+                            <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
+                            <Route path='/menu/:dishId' component={DishWithId} />
+                            <Route exact path='/contactus' component={() => <Contact
                                 resetFeedbackForm={this.props.resetFeedbackForm}
                                 postFeedback = {this.props.postFeedback} />} />
-                            <Redirect to={process.env.PUBLIC_URL + "/home"} />
+                            <Redirect to="/home" />
                         </Switch>
                     </CSSTransition>
                 </TransitionGroup>
