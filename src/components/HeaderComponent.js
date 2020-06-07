@@ -1,15 +1,13 @@
-import React, { Component } from 'react'
-import {
-    Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
+import React,{Component} from 'react'
+import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
     Button, Modal, ModalHeader, ModalBody,
-    Form, FormGroup, Input, Label
-} from 'reactstrap';
+    Form, FormGroup, Input, Label } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
         super(props);
-
+    
         this.state = {
             isNavOpen: false,
             isModalOpen: false
@@ -18,21 +16,21 @@ class Header extends Component {
         this.toggleNav = this.toggleNav.bind(this);
         this.toggleModal = this.toggleModal.bind(this);
         this.handleLogin = this.handleLogin.bind(this);
-    }
+      }
 
-    toggleNav() {
+      toggleNav() {
         this.setState({
-            isNavOpen: !this.state.isNavOpen
+          isNavOpen: !this.state.isNavOpen
         });
-    }
+      }
 
-    toggleModal() {
+      toggleModal() {
         this.setState({
-            isModalOpen: !this.state.isModalOpen
+          isModalOpen: !this.state.isModalOpen
         });
-    }
+      }
 
-    handleLogin(event) {
+      handleLogin(event) {
         alert("Username: " + this.username.value + " Password: " + this.password.value
             + " Remember: " + this.remember.checked);
         this.toggleModal();
@@ -41,31 +39,26 @@ class Header extends Component {
     }
 
     render() {
-        return (
+        return(
             <div>
                 <Navbar dark expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand>
-                            <NavLink className="nav-link" to='/home'>
-                                <img src='assets/images/logo.png' height="30" width="41" alt='Ristorante Con Fusion' />
-                            </NavLink>
-                        </NavbarBrand>
-
+                        <NavbarBrand href="https://AhmedIbrahimHamed.github.io/Ristorante-Con-Fusion"><img src='assets/images/logo.png' height="30" width="41" alt='Ristorante Con Fusion' /></NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
-                                <NavItem>
-                                    <NavLink className="nav-link" to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to='/aboutus'><span className="fa fa-info fa-lg"></span> About Us</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to='/menu'><span className="fa fa-list fa-lg"></span> Menu</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
-                                </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to='/aboutus'><span className="fa fa-info fa-lg"></span> About Us</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link"  to='/menu'><span className="fa fa-list fa-lg"></span> Menu</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
+                            </NavItem>
                             </Nav>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
