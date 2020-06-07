@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router>
+        <Router basename="/Ristorante-Con-Fusion">
           <div className="App">
             <Main />
           </div>
