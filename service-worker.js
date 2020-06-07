@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Ristorante-Con-Fusion/precache-manifest.db2da21ff6fbc956802bbeeb78b6e28e.js"
+  "/Ristorante-Con-Fusion/precache-manifest.4cba3f74f497be02079a0f5ce21a4144.js"
 );
 
 self.addEventListener('message', (event) => {
