@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Ristorante-Con-Fusion/static/css/main.b9ff4e28.chunk.css",
-    "main.js": "/Ristorante-Con-Fusion/static/js/main.5fa67781.chunk.js",
-    "main.js.map": "/Ristorante-Con-Fusion/static/js/main.5fa67781.chunk.js.map",
+    "main.js": "/Ristorante-Con-Fusion/static/js/main.28853e28.chunk.js",
+    "main.js.map": "/Ristorante-Con-Fusion/static/js/main.28853e28.chunk.js.map",
     "runtime-main.js": "/Ristorante-Con-Fusion/static/js/runtime-main.7bda75fd.js",
     "runtime-main.js.map": "/Ristorante-Con-Fusion/static/js/runtime-main.7bda75fd.js.map",
     "static/css/2.b9b88926.chunk.css": "/Ristorante-Con-Fusion/static/css/2.b9b88926.chunk.css",
     "static/js/2.ae5538d2.chunk.js": "/Ristorante-Con-Fusion/static/js/2.ae5538d2.chunk.js",
     "static/js/2.ae5538d2.chunk.js.map": "/Ristorante-Con-Fusion/static/js/2.ae5538d2.chunk.js.map",
     "index.html": "/Ristorante-Con-Fusion/index.html",
-    "precache-manifest.2e2be0650c015c640068fde57211a0d1.js": "/Ristorante-Con-Fusion/precache-manifest.2e2be0650c015c640068fde57211a0d1.js",
+    "precache-manifest.db2da21ff6fbc956802bbeeb78b6e28e.js": "/Ristorante-Con-Fusion/precache-manifest.db2da21ff6fbc956802bbeeb78b6e28e.js",
     "service-worker.js": "/Ristorante-Con-Fusion/service-worker.js",
     "static/css/2.b9b88926.chunk.css.map": "/Ristorante-Con-Fusion/static/css/2.b9b88926.chunk.css.map",
     "static/css/main.b9ff4e28.chunk.css.map": "/Ristorante-Con-Fusion/static/css/main.b9ff4e28.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.b9b88926.chunk.css",
     "static/js/2.ae5538d2.chunk.js",
     "static/css/main.b9ff4e28.chunk.css",
-    "static/js/main.5fa67781.chunk.js"
+    "static/js/main.28853e28.chunk.js"
   ]
 }
